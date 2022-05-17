@@ -1,0 +1,3 @@
+CREATE APPLICATION ROLE [Outsystem_API]
+	WITH PASSWORD = 'p@ssw0rd', DEFAULT_SCHEMA = [dbo]
+GO
