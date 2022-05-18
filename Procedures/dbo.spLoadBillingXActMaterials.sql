@@ -21,6 +21,8 @@ and  Rest_Bill_ID = @BillID
 and  Rest_Co_ID   = @RestCo      
 set nocount off      
 
+print 1
+
 -- [AT] 4-14-22 
 -- Removed Category ...I excluded these from Labor and Equipment as well
 -- New logic is:
