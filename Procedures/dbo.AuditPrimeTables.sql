@@ -6,7 +6,7 @@ GO
 -- Create date: <1-26-22>
 -- Description:	<Prime a new set of Audit records for a new Bill>
 -- =============================================
-CREATE PROCEDURE [dbo].[AuditPrimeTables] 
+CREATE OR ALTER PROCEDURE [dbo].[AuditPrimeTables] 
 	-- Add the parameters for the stored procedure here
 	@Bill_ID integer,
 	@Job_ID integer,
@@ -21,7 +21,7 @@ BEGIN
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 
-
+print 1
     -- Prime Roll-up Audit Summary Table
 INSERT INTO [RA - Audit Results - Summary] 
 ( Rest_Bill_ID,
